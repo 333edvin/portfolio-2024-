@@ -1,16 +1,10 @@
-import localFont from "next/font/local";
+import { Krub } from 'next/font/google'
 import "./globals.css";
+import Layout from "./Layout/Layout";
+import SmoothScroll from './components/homepage/animation/SmoothScroll';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+const inter = Krub({ subsets: ['latin'] , weight:['400'] })
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={inter.className}>
+
+        <Layout>
+        <SmoothScroll/>
         {children}
+        </Layout>
       </body>
     </html>
   );
