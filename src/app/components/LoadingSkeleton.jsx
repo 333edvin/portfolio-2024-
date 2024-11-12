@@ -1,4 +1,4 @@
-export default function(){
+export default function LoadingSkeleton(){
     return(
         <div className="container mx-auto px-6 py-10 space-y-6">
             {[...Array(5)].map((_, index) => (

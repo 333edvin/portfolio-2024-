@@ -1,38 +1,38 @@
 import Image from "next/image";
 
-export default function(){
+export default function Skills(){
     const skills=[
         {
             id:1,
-            img:'/images/eye.jpg'
+            img:'/images/html.png'
         },
         {
             id:2,
-            img:'/images/eye.jpg'
+            img:'/images/css.png'
         },
         {
             id:3,
-            img:'/images/eye.jpg'
+            img:'/images/js.png'
         },
         {
             id:4,
-            img:'/images/eye.jpg'
+            img:'/images/react.png'
         },
         {
             id:5,
-            img:'/images/eye.jpg'
+            img:'/images/node.png'
         },
         {
             id:6,
-            img:'/images/eye.jpg'
+            img:'/images/mongo.png'
         },
         {
             id:7,
-            img:'/images/eye.jpg'
+            img:'/images/tailwind.png'
         },
         {
             id:8,
-            img:'/images/eye.jpg'
+            img:'/images/next.png'
         },
     ]
     return(
@@ -42,7 +42,7 @@ export default function(){
             {
                 skills.map((data)=>(
                     <div key={data.id} className="flex justify-center m-2">
-                        <Image src={data.img} width={60} height={60} alt={data.id} className="rounded-full"/>
+                        <Image src={data.img} width={60} height={60} alt={data.id} className="object-fit"/>
                     </div>
                 ))
             }

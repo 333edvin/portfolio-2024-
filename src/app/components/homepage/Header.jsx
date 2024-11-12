@@ -31,7 +31,7 @@ export default function Navbar() {
         }, 2000); 
 
         return () => clearInterval(intervalId); 
-    }, []);
+    });
 
     return (
         <nav className={`fixed top-0 w-full z-10 'bg-transparent backdrop-blur-lg transition-all ease-in-out duration-300 p-2`}>

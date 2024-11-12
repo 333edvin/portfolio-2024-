@@ -4,7 +4,7 @@ import ContactSection from "../components/homepage/ContactSection";
 import Filter from "../components/workspage/Filter";
 import Loading from "./Loading";
 
-export default function (){
+export default function page(){
     return(
         <>
         <div className="container mx-auto px-6 py-10 pt-32 md:px-10 lg:px-20 ">

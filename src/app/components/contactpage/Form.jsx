@@ -3,13 +3,13 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import MagneticElement from "../homepage/animation/MagneticElement";
-export default function (){
+export default function Form(){
     return(
         <div className="grid grid-cols-1 md:grid-cols-3 pt-20">
                 <div className="p-2 md:p-8 col-span-2">
                     <form className="space-y-10">
                         <div className="">
-                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="name">What's your name?</label>
+                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="name">What&apos;s your name?</label>
                         <input
                             type="text"
                             id="name"
@@ -22,7 +22,7 @@ export default function (){
                         <hr/>
 
                         <div>
-                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="email">What's your email?</label>
+                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="email">What&apos;s your email?</label>
                         <input
                             type="email"
                             id="email"
@@ -35,7 +35,7 @@ export default function (){
                         <hr/>
 
                         <div>
-                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="organization">What's the name of your organization?</label>
+                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="organization">What&apos;s the name of your organization?</label>
                         <input
                             type="text"
                             id="organization"

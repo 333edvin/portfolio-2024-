@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import RevealingList from '../homepage/animation/RevealingList';
 
-export default function () {
+export default function Filter() {
   const [data, setData] = useState(null);
   const [activeTab, setActiveTab] = useState('All');
 
@@ -84,7 +84,8 @@ export default function () {
                 </div>
               ))}
               {data?.development.map(item => (
-                <RevealingList>
+                <div key={item.id}>
+                <RevealingList >
                 <Link href={item.link}>
                 <div className="flex flex-row justify-between items-center p-4">
                 <div>
@@ -104,6 +105,7 @@ export default function () {
                 <hr className="border-t border-gray-300" />
                 </Link>
               </RevealingList>
+                </div>
               ))}
             </ul>
           </div>
@@ -114,6 +116,8 @@ export default function () {
             <h3>Design</h3>
             <ul>
               {data?.design.map(item => (
+                <div key={item.id}>
+
                 <RevealingList>
                 <Link href={item.link}>
                 <div className="flex flex-row justify-between items-center p-4">
@@ -125,12 +129,13 @@ export default function () {
                       height={100}
                       alt={item.name}
                       className="w-full h-20 md:h-32 md:w-auto object-cover rounded-lg"
-                    />
+                      />
                   </div>
                 </div>
                 <hr className="border-t border-gray-300" />
                 </Link>
               </RevealingList>
+                      </div>
               ))}
             </ul>
           </div>
@@ -141,6 +146,8 @@ export default function () {
             <h3>Development</h3>
             <ul>
               {data?.development.map(item => (
+                <div key={item.id}>
+
                 <RevealingList>
 
                <Link href={item.link}>
@@ -159,11 +166,12 @@ export default function () {
                <hr className="border-t border-gray-300" />
                </Link>
               </RevealingList>
+              </div>
               ))}
             </ul>
           </div>
         )}
       </div>
-    </div>
+      </div>
   );
 }

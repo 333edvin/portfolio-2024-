@@ -3,7 +3,7 @@
 import { useScroll , motion, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function({lines , className}){
+export default function Words({lines , className}){
     const element = useRef(null);
     const {scrollYProgress} = useScroll({
         target:element,

@@ -2,7 +2,7 @@ import Image from "next/image";
 import ContactSection from "../components/homepage/ContactSection";
 import Education from "../components/aboutpage/Education";
 
-export default function(){
+export default function page(){
 
     const services = [
         {

@@ -1,5 +1,5 @@
 import LoadingSkeleton from "../components/LoadingSkeleton";
 
-export default function(){
+export default function Loading(){
     return <LoadingSkeleton/>
 }

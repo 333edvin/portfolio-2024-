@@ -2,7 +2,7 @@
 import React,{ useEffect, useRef } from "react"
 import gsap from 'gsap';
 
-export default function ({children}){
+export default function MagneticElement({children}){
     const ref = useRef(null)
     useEffect(()=>{
         const xTo = gsap.quickTo(ref.current,"x",{duration:1,ease:"elastic.out(1,0.3)"})

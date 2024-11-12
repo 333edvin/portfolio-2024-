@@ -12,7 +12,7 @@ export default function ContactSection() {
                 <div className="flex flex-col space-y-3">
                     <div className="flex items-center justify-center md:justify-start gap-5">
                         <Image src={'/images/eye.jpg'} width={80} height={80} alt="eye" className="md:w-28 rounded-full " />
-                        <p className="text-5xl  md:text-7xl">LET'S WORK</p>
+                        <p className="text-5xl  md:text-7xl">LET&apos;S WORK</p>
                     </div>
                     <p className="text-5xl md:text-7xl text-left">TOGETHER</p>
                 </div>
