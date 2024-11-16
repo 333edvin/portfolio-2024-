@@ -2,53 +2,75 @@
     "design":[
         {
             "id":1,
-            "name":"Tattoo",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "name":"Headphone",
+            "link":"https://restaurant-conveb.vercel.app/",
+            "img":"/images/head.png",
+            "deskImg":"/images/headdesk.png",
+            "phoneImg":"/images/headphone.png",
+            "category":"design"
         },
         {
             "id":2,
-            "name":"Tattoo",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "name":"Porsche",
+            "link":"https://gymbyconveb.netlify.app/",
+            "img":"/images/car.png",
+            "deskImg":"/images/cardesk.jpg",
+            "phoneImg":"/images/carphone.png",
+            "category":"design"
         },
         {
             "id":3,
-            "name":"Tattoo",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "name":"VR",
+            "link":"https://studio-photo.vercel.app/",
+            "img":"/images/vr.png",
+            "deskImg":"/images/vrdesk.png",
+            "phoneImg":"/images/vrphone.png",
+            "category":"design"
         },
         {
             "id":4,
-            "name":"Tattoo",
-            "link":"https",
-            "img":"/images/eye.jpg"
-        }
-    ],
-    "development":[
-        {
-            "id":1,
-            "name":"petshop",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "name":"Yoga",
+            "link":"https://gym-nextjsconveb.vercel.app/",
+            "img":"/images/yoga.png",
+            "deskImg":"/images/yogadesk.png",
+            "phoneImg":"/images/yogaphone.png",
+            "category":"design"
         },
         {
-            "id":2,
-            "name":"petshop",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "id":5,
+            "name":"Restaurant",
+            "link":"https://restaurant-conveb.vercel.app/",
+            "img":"/images/res.jpg",
+            "deskImg":"/images/resdesk.png",
+            "phoneImg":"/images/resphone.png",
+            "category":"development"
         },
         {
-            "id":3,
-            "name":"petshop",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "id":6,
+            "name":"Gym",
+            "link":"https://gymbyconveb.netlify.app/",
+            "img":"/images/gym.jpg",
+            "deskImg":"/images/gymdesk.png",
+            "phoneImg":"/images/gymphone.png",
+            "category":"development"
         },
         {
-            "id":4,
-            "name":"petshop",
-            "link":"https",
-            "img":"/images/eye.jpg"
+            "id":7,
+            "name":"Photo Studio",
+            "link":"https://studio-photo.vercel.app/",
+            "img":"/images/studio.jpg",
+            "deskImg":"/images/studiodesk.png",
+            "phoneImg":"/images/studiophone.png",
+            "category":"development"
+        },
+        {
+            "id":8,
+            "name":"Gym 2",
+            "link":"https://gym-nextjsconveb.vercel.app/",
+            "img":"/images/gym2.jpg",
+            "deskImg":"/images/gym2desk.png",
+            "phoneImg":"/images/gym2phone.jpg",
+            "category":"development"
         }
     ]
 }

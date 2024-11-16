@@ -8,17 +8,17 @@ export default function page(){
         {
             id:1,
             title:"Design",
-            description:"With a solid track record in designing websites, I deliver strong and user-friendly digital designs. (Since 2024 only in combination with development)",
+            description:"I create user-friendly, visually engaging designs using Figma, focusing on both functionality and aesthetics. From wireframes to high-fidelity prototypes, I use Figma’s collaborative features to streamline the process and ensure responsive, accessible interfaces that resonate with users.",
         },
         {
             id:2,
             title:"Development",
-            description:"With a solid track record in designing websites, I deliver strong and user-friendly digital designs. (Since 2024 only in combination with development)",
+            description:"I create high-performance websites with a focus on responsive design, seamless functionality, and scalability. My work covers both front-end and back-end development, delivering efficient, user-friendly solutions that are easy to maintain and tailored to each client’s unique needs.",
         },
         {
             id:3,
             title:"Full Stack",
-            description:"With a solid track record in designing websites, I deliver strong and user-friendly digital designs. (Since 2024 only in combination with development)",
+            description:"I’m a full-stack developer focused on creating high-performance, responsive websites. From front-end interfaces to back-end systems, I build scalable, efficient solutions that ensure seamless, user-friendly experiences.",
         },
     ]
     return(

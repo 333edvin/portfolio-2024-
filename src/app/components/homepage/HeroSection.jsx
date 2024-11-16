@@ -32,6 +32,7 @@ export default function HeroSection() {
     return () => context.revert();
   },[])
   return (
+    <>
     <div ref={container} className="h-[45rem] md:min-h-screen bg-[#faf9f5] relative">
       <div className="flex justify-center items-center">
         <Image
@@ -58,5 +59,6 @@ export default function HeroSection() {
         </p>
       </div>
     </div>
+          </>
   );
 }
