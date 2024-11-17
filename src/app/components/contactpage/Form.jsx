@@ -81,7 +81,7 @@ export default function Form(){
                         <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="orgname">What&apos;s the name of your organization?</label>
                         <input
                             type="text"
-                            id="organization"
+                            id="orgname"
                             name="orgname"
                             placeholder="Your Organization"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
@@ -96,7 +96,7 @@ export default function Form(){
                         <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="service">What services are you looking for?</label>
                         <input
                             type="text"
-                            id="services"
+                            id="service"
                             name="service"
                             placeholder="Services Needed"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
