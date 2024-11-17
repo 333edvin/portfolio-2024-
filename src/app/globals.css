@@ -49,6 +49,16 @@
   }
 
 
+/* Custom cursor styles */
+#custom-cursor {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  #custom-cursor {
+    display: flex;
+  }
+}
 
 
 

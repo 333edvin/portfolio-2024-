@@ -34,6 +34,15 @@ export default function Skills(){
             id:8,
             img:'/images/next.png'
         },
+        {
+            id:9,
+            img:'/images/wordpress.png'
+        },
+        {
+            id:10,
+            img:'/images/wix.png'
+        },
+        
     ]
     return(
         <div className="my-10">

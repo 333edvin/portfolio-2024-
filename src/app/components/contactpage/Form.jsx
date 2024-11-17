@@ -1,13 +1,52 @@
+'use client'
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { ImWhatsapp } from "react-icons/im";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { toast } from 'sonner';
 import MagneticElement from "../homepage/animation/MagneticElement";
 export default function Form(){
+    const router = useRouter();
+
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      orgname:'',
+      service:'',
+      message: '',
+    });
+  
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault(); // Prevent default form submission
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        router.push('/');
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', orgname:'' , service:'', message: '' });
+      } else {
+        toast.error('Failed to send message. Please try again later.');
+      }
+    };
     return(
         <div className="grid grid-cols-1 md:grid-cols-3 pt-20">
                 <div className="p-2 md:p-8 col-span-2">
-                    <form className="space-y-10">
+                    <form className="space-y-10" onSubmit={handleSubmit}>
                         <div className="">
                         <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="name">What&apos;s your name?</label>
                         <input
@@ -16,6 +55,8 @@ export default function Form(){
                             name="name"
                             placeholder="Your Name"
                             className="w-full px-4 py-2 bg-transparent focus:outline-none focus:border-none text-white  "
+                            value={formData.name}
+                            onChange={handleChange}
                             required
                         />
                         </div>
@@ -29,31 +70,39 @@ export default function Form(){
                             name="email"
                             placeholder="Your Email"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                         />
                         </div>
                         <hr/>
 
                         <div>
-                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="organization">What&apos;s the name of your organization?</label>
+                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="orgname">What&apos;s the name of your organization?</label>
                         <input
                             type="text"
                             id="organization"
-                            name="organization"
+                            name="orgname"
                             placeholder="Your Organization"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
+                            value={formData.orgname}
+                            onChange={handleChange}
+                            required
                         />
                         </div>
 
                         <hr/>
                         <div>
-                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="services">What services are you looking for?</label>
+                        <label className="block text-gray-200 font-thin mb-1 ml-4 text-sm md:text-2xl " htmlFor="service">What services are you looking for?</label>
                         <input
                             type="text"
                             id="services"
-                            name="services"
+                            name="service"
                             placeholder="Services Needed"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
+                            value={formData.service}
+                            onChange={handleChange}
+                            required
                         />
                         </div>
 
@@ -66,6 +115,9 @@ export default function Form(){
                             placeholder="Type your message here"
                             rows="4"
                             className="w-full px-4 py-2 bg-transparent  focus:outline-none focus:border-none text-white "
+                            value={formData.message}
+                            onChange={handleChange}
+                            required
                         ></textarea>
                         </div>
 

@@ -32,9 +32,13 @@ const Cursor = ({ hoverText }) => {
         height: isHovering ? '100px' : '10px',
         opacity: isHovering ? 1 : 0.5,
       }}
-      className="fixed flex items-center justify-center pointer-events-none"
+      className="custom-cursor fixed flex items-center justify-center pointer-events-none"
     >
-      {isHovering && <span className="cursor-text flex flex-col text-center"> <span className="text-[10px]">View</span> {hoverText} </span>}
+      {isHovering && (
+        <span className="cursor-text flex flex-col text-center">
+          <span className="text-[10px]">View</span> {hoverText}
+        </span>
+      )}
     </div>
   );
 };
