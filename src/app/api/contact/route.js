@@ -4,14 +4,14 @@ const nodemailer = require('nodemailer');
 async function POST(req) {
   const { name, email, orgname, service , message } = await req.json();
 
-  // Create a Nodemailer transporter using SMTP
+  
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com', // SMTP server host
     port: 465, // SMTP server port for secure connection (SSL)
-    secure: true, // true for 465, false for other ports
+    secure: true, 
     auth: {
-      user: process.env.EMAIL_USER, // your email address
-      pass: process.env.EMAIL_PASS, // your email password
+      user: process.env.EMAIL_USER, 
+      pass: process.env.EMAIL_PASS, 
     },
   });
 
@@ -25,8 +25,8 @@ async function POST(req) {
     Message: ${message}`,
   };
 
+
   try {
-    // Send the email
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ message: 'Message sent successfully!' }, { status: 200 });
   } catch (error) {
