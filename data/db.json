@@ -2,6 +2,7 @@
     "design":[
         {
             "id":1,
+            "brand":"beatz",
             "name":"Headphone",
             "link":"https://restaurant-conveb.vercel.app/",
             "img":"/images/head.png",
@@ -11,6 +12,7 @@
         },
         {
             "id":2,
+            "brand":"Porsche",
             "name":"Porsche",
             "link":"https://gymbyconveb.netlify.app/",
             "img":"/images/car.png",
@@ -20,6 +22,7 @@
         },
         {
             "id":3,
+            "brand":"v reality",
             "name":"VR",
             "link":"https://studio-photo.vercel.app/",
             "img":"/images/vr.png",
@@ -29,6 +32,7 @@
         },
         {
             "id":4,
+            "brand":"Prana Path",
             "name":"Yoga",
             "link":"https://gym-nextjsconveb.vercel.app/",
             "img":"/images/yoga.png",
@@ -38,6 +42,7 @@
         },
         {
             "id":5,
+            "brand":"Taste Avenue",
             "name":"Restaurant",
             "link":"https://restaurant-conveb.vercel.app/",
             "img":"/images/res.jpg",
@@ -47,6 +52,7 @@
         },
         {
             "id":6,
+            "brand":"Forge Fitness",
             "name":"Gym",
             "link":"https://gymbyconveb.netlify.app/",
             "img":"/images/gym.jpg",
@@ -56,6 +62,7 @@
         },
         {
             "id":7,
+            "brand":"Light & Lens",
             "name":"Photo Studio",
             "link":"https://studio-photo.vercel.app/",
             "img":"/images/studio.jpg",
@@ -65,7 +72,8 @@
         },
         {
             "id":8,
-            "name":"Gym 2",
+            "brand":"Pulse",
+            "name":"Gym",
             "link":"https://gym-nextjsconveb.vercel.app/",
             "img":"/images/gym2.jpg",
             "deskImg":"/images/gym2desk.png",

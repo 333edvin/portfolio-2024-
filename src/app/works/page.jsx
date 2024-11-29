@@ -41,7 +41,7 @@ export default function Page() {
               onClick={() => setActiveTab('All')}
             >
               All
-              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-black bg-slate-200 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-black border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
                 <p>{data.length}</p>
               </div>
             </button>
@@ -50,7 +50,7 @@ export default function Page() {
               onClick={() => setActiveTab('Design')}
             >
               Design
-              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-black bg-slate-200 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-black border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
                 <p>{getCategoryCount('design')}</p>
               </div>
             </button>
@@ -59,7 +59,7 @@ export default function Page() {
               onClick={() => setActiveTab('Development')}
             >
               Development
-              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-black bg-slate-200 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+              <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-black border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
                 <p>{getCategoryCount('development')}</p>
               </div>
             </button>
@@ -72,10 +72,17 @@ export default function Page() {
                 <div key={item.id}>
                   <RevealingList>
                     <Link href={`/works/${item.id}`}>
-                      <div className="flex flex-row justify-between items-center p-4">
+                      <div className="flex flex-row justify-between items-center py-4">
                         <div>
-                          <p className="text-3xl md:text-4xl lg:text-5xl mb-4">{item.name}</p>
-                          <p className="text-xs capitalize">{item.category}</p>
+                          <p className="text-2xl md:text-4xl lg:text-5xl mb-4 text-black uppercase">{item.brand}</p>
+                            <div className=" text-xs font-semibold text-black/40">
+                              <span>
+                               {item.name}&nbsp; Website  - 
+                                </span>
+                              <span>
+                                &nbsp;{item.category}
+                                </span>
+                            </div>
                         </div>
                         <div>
                           <Image

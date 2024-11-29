@@ -26,7 +26,7 @@ export default function page(){
         <div className="container mx-auto p-5 pt-32 md:p-20">
         <div className="space-y-10 my-5">
         <p className="text-3xl md:text-7xl font-extralight">Helping brands reach <br/> a broad audience through impactful website</p>
-        <p className="text-end text-xs md:text-lg">I help companies create tailored solutions that make a real impact. <br/> With every project, I’m committed to quality and always push my work to new heights</p>
+        <p className="text-end text-xs md:text-lg text-slate-500">I help companies create tailored solutions that make a real impact. With every project, I’m committed to quality and always push my work to new heights</p>
         </div>
         <hr/>
         
@@ -40,7 +40,7 @@ export default function page(){
                     <div key={data.id} className='space-y-6 md:space-y-10 '>
                         <p>0{data.id}</p><hr/>
                         <h2 className="text-3xl">{data.title}</h2>
-                        <p>{data.description}</p>
+                        <p className="text-xs md:text-base">{data.description}</p>
                     </div>
                 ))
                 }

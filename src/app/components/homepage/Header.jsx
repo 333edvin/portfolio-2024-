@@ -21,7 +21,7 @@ export default function Navbar() {
     }, []);
 
     const today = new Date();
-    const formattedDate = today.toLocaleDateString('en-US');
+    const formattedDate = today.toLocaleDateString('en-GB');
     const texts = ['Edvin Johnson', 'Call me ED'];
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
@@ -38,10 +38,10 @@ export default function Navbar() {
             <div className="container mx-auto flex items-center justify-between">
                 <div className="text-sm flex items-center gap-5">
                     <div className="relative inline-block group">
-                        <Image src="/images/eye.jpg" width={50} height={50} className="rounded-full" alt="Eye" />
+                        <Image src="/images/profilePic.png" width={50} height={50} className="rounded-full" alt="Eye" />
                         <div className="absolute left-0 w-72 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-in-out pointer-events-none group-hover:pointer-events-auto">
                             <div className="flex py-2 block p-5 gap-4">
-                                <Image src="/images/eye.jpg" width={100} height={100} className="rounded-full" alt="Eye" />
+                                <Image src="/images/profilePic.png" width={100} height={100} className="rounded-full" alt="Eye" />
                                 <div className="flex flex-col justify-center space-y-3">
                                     <p className="font-semibold">Edvin Johnson</p>
                                     <p>+91 8129 77 9713</p>

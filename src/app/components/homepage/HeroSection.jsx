@@ -40,21 +40,21 @@ export default function HeroSection() {
           ref={imgRef}
           width={500}
           height={500}
-          className="rounded-full mt-36 md:mt-0 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]  object-cover"
+          className="rounded-full mt-32 md:-mt-10 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]  object-cover"
           alt="Profile Picture"
         />
       </div>
 
      
-      <div ref={title} className="absolute  top-52  md:top-2/4 right-4 md:right-16 lg:right-40 xl:right-52 text-black font-semibold flex flex-col items-end md:items-start">
+      <div ref={title} className="absolute  top-52  md:top-2/4 right-4 md:right-16 lg:right-40 xl:right-52 text-black  flex flex-col items-end md:items-start">
         <IoArrowRedoOutline className="text-2xl md:text-3xl lg:text-4xl mb-2" />
-        <p className="text-lg lg:text-xl xl:text-2xl text-end md:text-left">
+        <p className="text-lg lg:text-xl xl:text-2xl text-end md:text-left ">
           Freelance <br /> Designer & Developer
         </p>
       </div>
 
-      <div ref={nameRef} className="absolute bottom-4 left-6 md:left-6 lg:left-6 text-black font-bold">
-        <p className="text-6xl md:text-7xl lg:text-7xl xl:text-9xl text-[#969693] ">
+      <div ref={nameRef} className="absolute -bottom-10 md:bottom-0 left-6 md:left-6 lg:left-6 text-black ">
+        <p className="text-6xl md:text-7xl lg:text-8xl xl:text-8xl text-black/20 ">
           EDVIN <br />JOHNSON
         </p>
       </div>

@@ -46,7 +46,7 @@ export default function Skills(){
     ]
     return(
         <div className="my-10">
-            <p>Tech...</p>
+        
         <div className="grid grid-cols-4 mt-5">
             {
                 skills.map((data)=>(
