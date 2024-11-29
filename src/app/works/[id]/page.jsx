@@ -54,11 +54,14 @@ export default function ProductDetailsPage({ params }) {
 
   return (
     <>
-    <div className="container mx-auto px-6 py-10 pt-32 md:px-10 lg:px-20 ">
-      <div className="relative space-y-6 md:space-y-10">
-      <p className="text-4xl md:text-8xl">{product.name}</p>
+    <div className=" py-10 pt-32 md:px-10 lg:px-20 ">
+      <div className="container mx-auto px-6 relative space-y-6 md:space-y-10">
+        <div className='space-y-3'>
+        <p className="text-4xl md:text-8xl">{product.brand}</p>
+        <p className="text-xs">{product.name} website</p>
+        </div>
         <hr/>
-        <div className="absolute top-0 right-5  md:right-10">
+        <div className=" absolute top-0 right-5  md:right-10">
           { product.category !== "design"?
 
       <MagneticElement>
@@ -82,7 +85,7 @@ export default function ProductDetailsPage({ params }) {
 
           <p className="text-2xl md:text-5xl text-center my-10 font-semibold md:my-20">Responsive Design</p>
 
-        <div className="space-y-20">
+        <div className="container mx-auto px-6 space-y-20">
           <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-10 gap-10">
           <div>
             <Image src={product.deskImg} alt={product.name} width={800} height={200}/>

@@ -22,7 +22,7 @@ export default function Navbar() {
 
     const today = new Date();
     const formattedDate = today.toLocaleDateString('en-GB');
-    const texts = ['Edvin Johnson', 'Call me ED'];
+    const texts = ['Edvin Johnson', 'call me ED'];
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
     useEffect(() => {
@@ -84,7 +84,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="md:hidden">
-                        <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none text-gray-400">
+                        <button onClick={() => setIsOpen(!isOpen)} className={`focus:outline-none ${isContactPage?`text-white`:`text-black`}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>

@@ -38,9 +38,9 @@ export default function HeroSection() {
         <Image
           src="/images/profilePic.png"
           ref={imgRef}
-          width={500}
-          height={500}
-          className="rounded-full mt-32 md:-mt-10 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]  object-cover"
+          width={400}
+          height={400}
+          className="rounded-full h-[400px] mt-32 md:-mt-10 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px]  object-cover "
           alt="Profile Picture"
         />
       </div>
