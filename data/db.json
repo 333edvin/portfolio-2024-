@@ -79,6 +79,16 @@
             "deskImg":"/images/gym2desk.png",
             "phoneImg":"/images/gym2phone.jpg",
             "category":"development"
+        },
+        {
+            "id":9,
+            "brand":"Ai",
+            "name":"cyborg ",
+            "link":"https://gym-nextjsconveb.vercel.app/",
+            "img":"/images/cyborg.jpg",
+            "deskImg":"/images/cybdesk.png",
+            "phoneImg":"/images/cybmob.jpg",
+            "category":"design"
         }
     ]
 }
