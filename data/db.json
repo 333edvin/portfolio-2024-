@@ -2,6 +2,16 @@
     "design":[
         {
             "id":1,
+            "brand":"Ai",
+            "name":"cyborg ",
+            "link":"https://gym-nextjsconveb.vercel.app/",
+            "img":"/images/cyborg.jpg",
+            "deskImg":"/images/cybdesk.jpg",
+            "phoneImg":"/images/cybmob.jpg",
+            "category":"design"
+        },
+        {
+            "id":2,
             "brand":"beatz",
             "name":"Headphone",
             "link":"https://restaurant-conveb.vercel.app/",
@@ -11,7 +21,7 @@
             "category":"design"
         },
         {
-            "id":2,
+            "id":3,
             "brand":"Porsche",
             "name":"Porsche",
             "link":"https://gymbyconveb.netlify.app/",
@@ -21,7 +31,7 @@
             "category":"design"
         },
         {
-            "id":3,
+            "id":4,
             "brand":"v reality",
             "name":"VR",
             "link":"https://studio-photo.vercel.app/",
@@ -31,7 +41,7 @@
             "category":"design"
         },
         {
-            "id":4,
+            "id":5,
             "brand":"Prana Path",
             "name":"Yoga",
             "link":"https://gym-nextjsconveb.vercel.app/",
@@ -41,7 +51,7 @@
             "category":"design"
         },
         {
-            "id":5,
+            "id":6,
             "brand":"Taste Avenue",
             "name":"Restaurant",
             "link":"https://restaurant-conveb.vercel.app/",
@@ -51,7 +61,7 @@
             "category":"development"
         },
         {
-            "id":6,
+            "id":7,
             "brand":"Forge Fitness",
             "name":"Gym",
             "link":"https://gymbyconveb.netlify.app/",
@@ -61,7 +71,7 @@
             "category":"development"
         },
         {
-            "id":7,
+            "id":8,
             "brand":"Light & Lens",
             "name":"Photo Studio",
             "link":"https://studio-photo.vercel.app/",
@@ -71,7 +81,7 @@
             "category":"development"
         },
         {
-            "id":8,
+            "id":9,
             "brand":"Pulse",
             "name":"Gym",
             "link":"https://gym-nextjsconveb.vercel.app/",
@@ -79,16 +89,6 @@
             "deskImg":"/images/gym2desk.png",
             "phoneImg":"/images/gym2phone.jpg",
             "category":"development"
-        },
-        {
-            "id":9,
-            "brand":"Ai",
-            "name":"cyborg ",
-            "link":"https://gym-nextjsconveb.vercel.app/",
-            "img":"/images/cyborg.jpg",
-            "deskImg":"/images/cybdesk.png",
-            "phoneImg":"/images/cybmob.jpg",
-            "category":"design"
         }
     ]
 }
