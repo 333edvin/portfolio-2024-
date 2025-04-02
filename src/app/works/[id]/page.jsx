@@ -6,6 +6,9 @@ import { useState, useEffect } from 'react';
 import  MagneticElement  from '@/app/components/homepage/animation/MagneticElement';
 import ContactSection from './../../components/homepage/ContactSection';
 
+import { motion } from "framer-motion";
+import { CgWebsite } from "react-icons/cg";
+
 export default function ProductDetailsPage({ params }) {
   const { id } = params; // Get the product ID from params
 
@@ -54,60 +57,78 @@ export default function ProductDetailsPage({ params }) {
 
   return (
     <>
-    <div className=" py-10 pt-32 md:px-10 lg:px-20 ">
-      <div className="container mx-auto px-6 relative space-y-6 md:space-y-10">
-        <div className='space-y-3'>
-        <p className="text-4xl md:text-8xl">{product.brand}</p>
-        <p className="text-xs">{product.name} website</p>
-        </div>
-        <hr/>
-        <div className=" absolute top-0 right-5  md:right-10">
-          { product.category !== "design"?
+    <div className=" mt-20 ">
 
-      <MagneticElement>
-        <Link href={product.link} target="_blank">
-          <button className=" rounded-full w-20 h-20  md:w-48  md:h-48 bg-cyan-500 text-white text-xs md:text-lg font-semibold">  
-             View Live
-          </button>
-        </Link>
-      </MagneticElement>
-              :"Figma Design"
-        }
-        </div>
-      </div>
-      <Image
-        src={product.img}
-        alt={product.name}
-        width={1920}  
-        height={1080} 
-        className="w-full h-auto object-cover mt-14 md:mt-20  "
+        <div className="container mx-auto md:px-28 space-y-6 md:space-y-10 mt-5 px-4 ">
+            <div className="flex gap-5 items-center">
+
+                <Image 
+                        src='/images/figma.jpeg'
+                        alt={product.name} 
+                        width={100} 
+                        height={100} 
+                        className="w-10 h-10 md:h-auto " 
+                        />
+                <p>Figma Design</p>
+            </div>
+            <div className="relative">
+                <Image 
+                    src={product.mainimg} 
+                    alt={product.name} 
+                    width={900} 
+                    height={400} 
+                    className="w-full rounded-lg" 
+                    />
+                    {product.link && (
+                                  <Link href={product.link} className="absolute bottom-2 right-2 rounded-full bg-black text-white p-2">
+                                  <CgWebsite />
+                                </Link>
+                    )}
+            </div>
+            <p className="text-center my-20 text-2xl uppercase">{product.name} website design</p>
+
+            {/* Ensure the images do not exceed the container width */}
+            <div className="flex justify-center gap-2 md:gap-5">
+                <div className="max-w-[500px] w-full">
+                    <Image 
+                        src={product.img1} 
+                        alt={product.name} 
+                        width={500} 
+                        height={900} 
+                        className="w-full h-72 md:h-auto shadow-lg rounded-lg" 
+                    />
+                </div>
+                <div className="max-w-[500px] w-full">
+                    <Image 
+                        src={product.img2} 
+                        alt={product.name} 
+                        width={500} 
+                        height={900} 
+                        className="w-full h-72 md:h-auto shadow-lg rounded-lg" 
+                    />
+                </div>
+            </div>   
+<div className="my-10">
+    <div className="flex items-center">
+        <div className="flex-1 border-t border-black/10" />
+        <Image 
+            src={`/images/profilePic.png`} 
+            alt="profilePic" 
+            width={100} 
+            height={100} 
+            quality={50} 
+            className="object-cover rounded-full mx-4" 
         />
+        <div className="flex-1 border-t border-black/10" />
+    </div>
 
-          <p className="text-2xl md:text-5xl text-center my-10 font-semibold md:my-20">Responsive Design</p>
+    <div className="text-center my-5">
+        <button className="bg-black px-4 py-2 text-white rounded-full">Contact</button>
+    </div>
+</div>
+</div>
 
-        <div className="container mx-auto px-6 space-y-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-10 gap-10">
-          <div>
-            <Image src={product.deskImg} alt={product.name} width={800} height={200}/>
-          </div>
-          <div className='flex justify-center items-center'>
-            <p className="text-sm md:text-xl">The desktop user interface (UI) is crafted to offer a visually rich and spacious layout, providing users with a seamless browsing experience on larger screens. It incorporates advanced navigation systems, detailed visuals, and optimized content placement to utilize the available space effectively. Dynamic elements ensure that content adapts to different screen resolutions, enabling smooth transitions and maximizing user engagement. Features like hover effects and multi-column designs enhance usability and present a professional aesthetic for desktop users.</p>
-          </div>
-          </div>
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 mx-auto my-10 gap-10">
-          <div className="order-2 md:order-1 flex justify-center items-center">
-            <p className="text-sm md:text-xl">The phone user interface (UI) focuses on simplicity and ease of use, ensuring a responsive design that adapts perfectly to smaller screens. Key elements are reorganized for a vertical layout, prioritizing touch-friendly controls and legible text sizes for mobile users. The dynamic design ensures quick loading times and streamlined navigation, with collapsible menus and swipe gestures providing an intuitive browsing experience. This approach guarantees that the website retains its functionality and appeal, even on compact devices.</p>
-          </div>
-          <div className='flex justify-center order-1 md:order-2'>
-            <Image src={product.phoneImg} alt={product.name} width={300} height={200} className="rounded-[45px]"/>
-          </div>
-          </div>
-        </div>
-
-
-
+     
     </div>
         <ContactSection/>
         </>

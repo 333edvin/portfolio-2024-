@@ -36,9 +36,9 @@ export default function RecentWorks() {
             <div >
                           <p className="text-2xl md:text-4xl lg:text-5xl mb-2  text-black uppercase">{data.brand}</p>
                             <div className="mb-4 text-xs font-semibold text-black/40">
-                              <span>
-                               {data.name}&nbsp; Website  - 
-                                </span>
+                              
+                               Website  - 
+                                
                               <span>
                                 &nbsp;{data.category}
                                 </span>
@@ -46,7 +46,7 @@ export default function RecentWorks() {
                         </div>
               <div>
                 <Image
-                  src={data.img}
+                  src={data.mainimg}
                   width={200}
                   height={100}
                   alt={data.name}

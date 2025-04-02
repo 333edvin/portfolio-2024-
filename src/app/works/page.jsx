@@ -76,9 +76,9 @@ export default function Page() {
                         <div>
                           <p className="text-2xl md:text-4xl lg:text-5xl mb-4 text-black uppercase">{item.brand}</p>
                             <div className=" text-xs font-semibold text-black/40">
-                              <span>
-                               {item.name}&nbsp; Website  - 
-                                </span>
+                              
+                                Website  - 
+                                
                               <span>
                                 &nbsp;{item.category}
                                 </span>
@@ -86,7 +86,7 @@ export default function Page() {
                         </div>
                         <div>
                           <Image
-                            src={item.img}
+                            src={item.mainimg}
                             width={200}
                             height={100}
                             alt={item.name}
