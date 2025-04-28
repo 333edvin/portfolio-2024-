@@ -80,12 +80,12 @@ export default function ProductDetailsPage({ params }) {
                     className="w-full rounded-lg" 
                     />
                     {product.link && (
-                                  <Link href={product.link} className="absolute bottom-2 right-2 rounded-full bg-black text-white p-2">
+                                  <Link href={product.link} className="absolute bottom-2 right-2 rounded-full bg-blue-500 text-white p-2 md:p-5">
                                   <CgWebsite />
                                 </Link>
                     )}
             </div>
-            <p className="text-center my-20 text-2xl uppercase">{product.name} website design</p>
+            <p className="text-center my-20 text-2xl uppercase">{product.name} Website</p>
 
             {/* Ensure the images do not exceed the container width */}
             <div className="flex justify-center gap-2 md:gap-5">

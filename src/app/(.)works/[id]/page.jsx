@@ -69,12 +69,12 @@ export default function PhotoModal({ params }) {
           <div className="relative">
             <Image src={product.mainimg} alt={product.name} width={900} height={400} className="w-full rounded-lg" />
             {product.link && (
-              <Link href="" className="absolute bottom-2 right-2 rounded-full bg-black text-white p-2">
+              <Link href="" className="absolute bottom-2 right-2 rounded-full bg-blue-500 text-white p-2 md:p-5">
               <CgWebsite />
             </Link>
             )}
           </div>
-          <p className="text-center my-20 text-2xl uppercase">{product.category}</p>
+          <p className="text-center my-20 text-2xl uppercase">{product.name} Website</p>
 
           {/* Clickable Images */}
           <div className="flex justify-center gap-2 md:gap-5">

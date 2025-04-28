@@ -22,8 +22,9 @@ export default function Page() {
   }, []);
 
   const filteredData = activeTab === 'All' 
-    ? data 
-    : data.filter(item => item.category.toLowerCase() === activeTab.toLowerCase());
+  ? [...data].reverse()
+  : [...data.filter(item => item.category.toLowerCase() === activeTab.toLowerCase())].reverse();
+
 
   const getCategoryCount = (category) =>
     data.filter(item => item.category.toLowerCase() === category.toLowerCase()).length;

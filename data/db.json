@@ -2,202 +2,190 @@
     "design": [
         {
             "id": 1,
-            "brand": "ceno",
-            "name": "Work 1",
+            "brand": "Restaurant",
+            "name": "Restaurant",
+            "link": "https://restaurant-conveb.vercel.app/",
             "mainimg": "/images/work1.jpg",
-            "img1": "/images/work1img1.jpg",
-            "img2": "/images/work1img2.jpg",
-            "category": "design"
+            "img1": "",
+            "img2": "",
+            "category": "development"
         },
         {
             "id": 2,
-            "brand": "zephyre",
-            "name": "Work 2",
-            "link": "https://restaurant-conveb.vercel.app/",
+            "brand": "photography",
+            "name": "photography",
+            "link": "https://studio-photo.vercel.app/",
             "mainimg": "/images/work2.jpg",
-            "img1": "/images/work2img1.jpg",
-            "img2": "/images/work2img2.jpg",
-            "category": "design"
+            "img1": "",
+            "img2": "",
+            "category": "development"
         },
         {
             "id": 3,
-            "brand": "prism",
-            "name": "Work 3",
-            "link": "https://gymbyconveb.netlify.app/",
-            "mainimg": "/images/work3.jpg",
-            "img1": "/images/work3img1.jpg",
-            "img2": "/images/work3img2.jpg",
+            "brand": "headset",
+            "name": "headset",
+            "mainimg": "/images/work3.png",
+            "img1": "",
+            "img2": "",
             "category": "design"
         },
         {
             "id": 4,
-            "brand": "void beat",
-            "name": "Work 4",
-            "link": "https://studio-photo.vercel.app/",
+            "brand": "gym1",
+            "name": "Gym",
+            "link": "https://gymbyconveb.netlify.app/",
             "mainimg": "/images/work4.jpg",
-            "img1": "/images/work4img1.jpg",
-            "img2": "/images/work4img2.jpg",
-            "category": "design"
+            "img1": "",
+            "img2": "",
+            "category": "development"
         },
         {
             "id": 5,
-            "brand": "carbon cruze",
-            "name": "Work 5",
+            "brand": "gym2",
+            "name": "Gym",
             "link": "https://gym-nextjsconveb.vercel.app/",
             "mainimg": "/images/work5.jpg",
-            "img1": "/images/work5img1.jpg",
-            "img2": "/images/work5img2.jpg",
-            "category": "design"
+            "img1": "",
+            "img2": "",
+            "category": "development"
         },
         {
             "id": 6,
-            "brand": "econest",
-            "name": "Work 6",
-            "link": "https://restaurant-conveb.vercel.app/",
-            "mainimg": "/images/work6.jpg",
-           "img1": "/images/work6img1.jpg",
-            "img2": "/images/work6img2.jpg",
+            "brand": "porsche",
+            "name": "Porsche",
+            "mainimg": "/images/work6.png",
+           "img1": "",
+            "img2": "",
             "category": "design"
         },
         {
             "id": 7,
-            "brand": "froza",
-            "name": "Work 7",
-            "link": "https://gymbyconveb.netlify.app/",
+            "brand": "cyborg",
+            "name": "Robotic",
             "mainimg": "/images/work7.jpg",
-            "img1": "/images/work7img1.jpg",
-            "img2": "/images/work7img2.jpg",
+            "img1": "",
+            "img2": "",
             "category": "design"
         },
         {
             "id": 8,
-            "brand": "cafe lumiere",
-            "name": "Work 8",
-            "link": "https://studio-photo.vercel.app/",
+            "brand": "neurax",
+            "name": "VR Headset",
             "mainimg": "/images/work8.jpg",
-            "img1": "/images/work8img1.jpg",
-            "img2": "/images/work8img2.jpg",
+            "img1": "",
+            "img2": "",
             "category": "design"
         },
         {
             "id": 9,
             "brand": "holo x",
-            "name": "Work 9",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "name": "Fashion",
             "mainimg": "/images/work9.jpg",
-            "img1": "/images/work9img1.jpg",
-            "img2": "/images/work9img2.jpg",
+            "img1": "",
+            "img2": "",
             "category": "design"
         },
         {
             "id": 10,
-            "brand": "allesandro",
-            "name": "Work 10",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "froza",
+            "name": "Fashion",
             "mainimg": "/images/work10.jpg",
             "img1": "/images/work10img1.jpg",
-            "img2": "/images/work10img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 11,
-            "brand": "ai",
-            "name": "Work 11",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "alessandro",
+            "name": "Portfolio",
             "mainimg": "/images/work11.jpg",
-            "img1": "/images/work11img1.jpg",
-            "img2": "/images/work11img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 12,
-            "brand": "Porsche",
-            "name": "Work 12",
-            "link": "https://gym-nextjsconveb.vercel.app/",
-            "mainimg": "/images/work12.png",
+            "brand": "void beat",
+            "name": "Headset",
+            "mainimg": "/images/work12.jpg",
             "img1": "/images/work12img1.jpg",
             "img2": "/images/work12img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 13,
-            "brand": "Beat",
-            "name": "Work 13",
-            "link": "https://gym-nextjsconveb.vercel.app/",
-            "mainimg": "/images/work13.png",
+            "brand": "carbon cruze",
+            "name": "Cycle",
+            "mainimg": "/images/work13.jpg",
             "img1": "/images/work13img1.jpg",
             "img2": "/images/work13img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 14,
-            "brand": "gym 1",
-            "name": "Work 14",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "lumibot",
+            "name": "Robotic Cleaner",
             "mainimg": "/images/work14.jpg",
-            "img1": "/images/work14img1.jpg",
-            "img2": "/images/work14img2.jpg",
-            "category": "development"
-        },
-        {
+            "category": "design"
+          },
+          {
             "id": 15,
-            "brand": "gym 2",
-            "name": "Work 15",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "cafe lumiere",
+            "name": "Cafe",
             "mainimg": "/images/work15.jpg",
             "img1": "/images/work15img1.jpg",
-            "img2": "/images/work15img2.jpg",
-            "category": "development"
-        },
-        {
+            "category": "design"
+          },
+          {
             "id": 16,
-            "brand": "photography",
-            "name": "Work 16",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "Eco Nest",
+            "name": "Real estate",
             "mainimg": "/images/work16.jpg",
             "img1": "/images/work16img1.jpg",
             "img2": "/images/work16img2.jpg",
-            "category": "development"
-        },
-        {
+            "category": "design"
+          },
+          {
             "id": 17,
-            "brand": "burn up",
-            "name": "Work 17",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "zephyre",
+            "name": "Fashion",
             "mainimg": "/images/work17.jpg",
             "img1": "/images/work17img1.jpg",
             "img2": "/images/work17img2.jpg",
-            "category": "development"
-        },
-        {
+            "category": "design"
+          },
+          {
             "id": 18,
-            "brand": "lumibot",
-            "name": "Work 18",
-            "link": "https://gym-nextjsconveb.vercel.app/",
+            "brand": "ceno",
+            "name": "Fashion",
             "mainimg": "/images/work18.jpg",
             "img1": "/images/work18img1.jpg",
             "img2": "/images/work18img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 19,
-            "brand": "nurax",
-            "name": "Work 18",
-            "link": "https://gym-nextjsconveb.vercel.app/",
-            "mainimg": "/images/work18.jpg",
-            "img1": "/images/work18img1.jpg",
-            "img2": "/images/work18img2.jpg",
+            "brand": "prism",
+            "name": "Agency",
+            "mainimg": "/images/work19.jpg",
+            "img1": "/images/work19img1.jpg",
+            "img2": "/images/work19img2.jpg",
             "category": "design"
-        },
-        {
+          },
+          {
             "id": 20,
-            "brand": "prana",
-            "name": "Work 18",
-            "link": "https://gym-nextjsconveb.vercel.app/",
-            "mainimg": "/images/work18.jpg",
-            "img1": "/images/work18img1.jpg",
-            "img2": "/images/work18img2.jpg",
+            "brand": "cortex",
+            "name": "Drone",
+            "mainimg": "/images/work20.jpg",
+            "img1": "/images/work20img1.jpg",
+            "img2": "/images/work20img2.jpg",
             "category": "design"
-        }
+          },
+          {
+            "id": 21,
+            "brand": "auxion",
+            "name": "Robotic",
+            "mainimg": "/images/work21.jpg",
+            "img1": "/images/work21img1.jpg",
+            "img2": "/images/work21img2.jpg",
+            "category": "design"
+          }
     ]
 }
